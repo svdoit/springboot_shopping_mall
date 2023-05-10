@@ -36,7 +36,7 @@ public class Member {
         member.setAddress(memberFormDto.getAddress());
         String password = passwordEncoder.encode(memberFormDto.getPassword());
         member.setPassword(password);
-        member.setRole(Role.USER);
+        member.setRole(Role.USER); //p.185에서 실습 후 다시 원복
         return member;
     }
 
